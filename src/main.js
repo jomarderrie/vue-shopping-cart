@@ -8,7 +8,9 @@ const app = createApp(App)
 
 app.use(router);
 
-app.use(store);
+app.use(store, {
+	devtools: true
+  });
 
 app.component('base-badge', BaseBadge);
 
